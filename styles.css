@@ -5,8 +5,14 @@ body {
 }
 
 .photoMe {
-  max-width: 30%;
+  max-width: 45%;
   height: auto;
+  border-radius: 25px;
+  border: 20px solid rgb(54, 94, 202, 0.4);
+}
+
+.greetingText {
+  font-size: 30px;
 }
 
 section {
@@ -18,9 +24,11 @@ section {
   &:nth-of-type(1) {
     color: lightgray;
     background: linear-gradient(to bottom right, black, rgb(86, 86, 86));
-    /* display: flex; */
-    /* align-items: center;
-    justify-items: center; */
+    .splitSection {
+      display: flex;
+      align-items: center;
+      justify-items: center;
+    }
   }
 
   &:nth-of-type(2) {
@@ -70,9 +78,35 @@ section {
 
 /* Media Queries for Mobile Responsiveness */
 @media screen and (max-width: 768px) {
+  .photoMe {
+    max-width: 45%;
+    height: auto;
+    border-radius: 25px;
+    border: 20px solid rgb(54, 94, 202, 0.4);
+  }
+  
+  .greetingText {
+    font-size: 10px;
+  }
 
+  .splitSection {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 480px) {
+  .photoMe {
+    max-width: 45%;
+    height: auto;
+    border-radius: 25px;
+    border: 20px solid rgb(54, 94, 202, 0.4);
+  }
+  
+  .greetingText {
+    font-size: 10px;
+  }
 
+  .splitSection {
+    display: none;
+  }
 }
