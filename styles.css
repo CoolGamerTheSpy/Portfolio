@@ -20,6 +20,25 @@ body {
   border: 20px solid rgb(54, 94, 202, 0.4);
 }
 
+.Orange {
+  color: #ff8800;
+}
+
+.Blue {
+  color: #337dec;
+}
+
+.Yellow {
+  color: #e0dd24;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  font-size: 60px;
+}
+
 .greetingText {
   font-size: 30px;
 }

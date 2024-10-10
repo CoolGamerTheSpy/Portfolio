@@ -18,7 +18,7 @@
 <body>
     <section>
         <div class="splitSection">
-            <a href="./index.html"><img class="top-icons" src = "./img/me.webp" alt="My Inst"/></a>
+            <a href="./index.html"><img class="top-icons" src = "./icons/instagram.svg" alt="My Inst"/></a>
             <div class="greetingText">
             <p>Hi, I'm </p><p class="name">Adrian Vargas.</p>
             <h1>Game Developer and Programer</h1>
@@ -38,18 +38,25 @@
     </section>
 
     <section>
-        <h1 class="reveal-type">Projects I am working on</h1>    
-        <div class="reveal-type"><i class="devicon-cplusplus-plain"></i></div>
-        <i class="devicon-css3-plain-wordmark"></i>
-        <i class="devicon-haxe-plain"></i>
-        <i class="devicon-javascript-plain"></i>
-        <i class="devicon-html5-plain-wordmark"></i>
+        <h1 class="reveal-type">Projects I am working on</h1> 
+        <div class="icons">
+            <div class="Orange"><i class="devicon-haxe-plain"></i></div>
+            <div class="Blue"><i class="devicon-cplusplus-plain"></i></div>
+            <div class="Orange"><i class="devicon-html5-plain-wordmark"></i></div>
+            <div class="Blue"><i class="devicon-css3-plain-wordmark"></i></div>
+            <div class="Yellow"><i class="devicon-javascript-plain"></i></div>
+        </div>
     </section>
 
     <section>
-        <i class="devicon-unity-plain"></i>
-        <i class="devicon-vscode-plain"></i>
-        <i class="devicon-blender-original"></i>    
+        <div class="reveal-type">
+            <div class="icons">
+                <i class="devicon-unity-plain"></i>
+                <div class="Blue"><i class="devicon-vscode-plain"></i></div>
+                <div class="Orange"><i class="devicon-blender-original"></i></div>
+                <p>P.Diddy</p>
+            </div>
+        </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
@@ -80,7 +87,6 @@
                 stagger: 0.05
             })
         })
-
         // Initialize Lenis
         const lenis = new Lenis();
         
