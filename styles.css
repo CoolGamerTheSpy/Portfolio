@@ -113,4 +113,8 @@ section {
   .splitSection {
     display: none;
   }
+
+  .photoMe {
+    border-radius: 10px;
+  }
 }
