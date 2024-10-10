@@ -34,9 +34,15 @@ body {
 
 .icons {
   display: flex;
+  text-align: center;
   align-items: center;
   justify-items: center;
   font-size: 60px;
+}
+
+.ClickTeam {
+  max-width: 60px;
+  height: auto;
 }
 
 .greetingText {
