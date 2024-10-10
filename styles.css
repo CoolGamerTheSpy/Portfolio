@@ -4,6 +4,10 @@ body {
     margin: 0;
 }
 
+.name {
+  color: lightskyblue;
+}
+
 .photoMe {
   max-width: 45%;
   height: auto;
