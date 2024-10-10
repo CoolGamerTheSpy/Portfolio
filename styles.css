@@ -45,6 +45,11 @@ body {
   height: auto;
 }
 
+.ASM {
+  max-width: 60px;
+  height: auto;
+}
+
 .greetingText {
   font-size: 30px;
 }
