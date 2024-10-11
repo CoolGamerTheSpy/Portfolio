@@ -169,6 +169,10 @@ section {
   body {
      padding: 10px;
   }
+  
+  section {
+  height: 75vh;
+  }
 
   /* Stack elements vertically for smaller screens */
   .splitSection {
