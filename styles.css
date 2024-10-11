@@ -8,11 +8,6 @@ body {
   color: lightskyblue;
 }
 
-.top-icons {
-  max-width: 2%;
-  height: auto;
-}
-
 .photoMe {
   max-width: 45%;
   height: auto;
@@ -40,6 +35,15 @@ body {
   font-size: 60px;
 }
 
+.icons1 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 60px;
+}
+
 .ClickTeam {
   max-width: 60px;
   height: auto;
@@ -52,6 +56,39 @@ body {
 
 .greetingText {
   font-size: 30px;
+}
+
+/* Position the social icons at the top-left */
+.nav-text {
+  position: absolute;
+  top: 5px;  /* Adjust for vertical positioning */
+  right: 20px; /* Adjust for horizontal positioning */
+  display: flex;
+  align-items: center;
+}
+
+/* Position the social icons at the top-left */
+.social-icons {
+  position: absolute;
+  top: 20px;  /* Adjust for vertical positioning */
+  left: 20px; /* Adjust for horizontal positioning */
+  display: flex;
+  gap: 10px;  /* Space between icons */
+  align-items: center;
+}
+
+/* Icon styles */
+.top-icons {
+  width: 30px;  /* Adjust size as needed */
+  height: auto;
+  cursor: pointer;
+}
+
+/* Optional hover effect */
+.top-icons:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
 }
 
 section {
@@ -115,41 +152,55 @@ section {
   }
 }
 
-/* Media Queries for Mobile Responsiveness */
+/* Mobile Styles */
 @media screen and (max-width: 768px) {
-  .photoMe {
-    max-width: 45%;
-    height: auto;
-    border-radius: 25px;
-    border: 20px solid rgb(54, 94, 202, 0.4);
-  }
-  
-  .greetingText {
-    font-size: 10px;
+  body {
+     padding: 10px;
   }
 
+  /* Stack elements vertically for smaller screens */
   .splitSection {
-    display: none;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
   }
-}
 
-@media screen and (max-width: 480px) {
+  /* Adjust image sizes for mobile */
+  .greetingImg img, 
   .photoMe {
-    max-width: 45%;
-    height: auto;
-    border-radius: 25px;
-    border: 20px solid rgb(54, 94, 202, 0.4);
-  }
-  
-  .greetingText {
-    font-size: 10px;
+     max-width: 90%;  /* Make the image responsive */
+     height: auto;
   }
 
-  .splitSection {
-    display: none;
+  /* Adjust font sizes for better readability on small screens */
+  h1, h2, p {
+     font-size: 1.2rem;
   }
 
-  .photoMe {
-    border-radius: 10px;
+  .name {
+     font-size: 2rem; /* Slightly reduce name size */
+  }
+
+  /* Adjust icon container layout */
+  .icons, .icons1 {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);  /* 2 icons per row */
+     gap: 20px;
+     justify-items: center;
+     width: 100%;
+  }
+
+  /* Further tweaks to icon sizes */
+  .devicon-haxe-plain, .devicon-cplusplus-plain, .devicon-html5-plain, 
+  .devicon-css3-plain, .devicon-javascript-plain, .devicon-unity-plain, 
+  .devicon-vscode-plain, .devicon-blender-original, .devicon-java-plain {
+     font-size: 50px;  /* Resize icons for mobile */
+  }
+
+  /* Adjust other custom icon images */
+  .ClickTeam, .ASM {
+     width: 60px;  /* Resize custom images */
+     height: auto;
   }
 }
