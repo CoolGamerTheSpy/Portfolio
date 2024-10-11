@@ -122,11 +122,6 @@ section {
   &:nth-of-type(2) {
     color: lightgray;
     background: linear-gradient(to right, rgb(43, 43, 43), rgb(86, 86, 86));
-    /* .splitSection {
-      display: flex;
-      align-items: center;
-      justify-items: center;
-    } */
 
     h1 {
       font-size: clamp(2rem, 5vw, 8rem);
@@ -171,11 +166,25 @@ section {
   }
   
   section {
-  height: 75vh;
-  }
+    &:nth-of-type(1) {
+      height: 100vh;
+    }
 
-  section {
-    height: 80vh;
+    &:nth-of-type(2) {
+      height: 10vh;
+    }
+
+    &:nth-of-type(3) {
+      height: 100vh;
+    }
+
+    &:nth-of-type(3) {
+      height: 100vh;
+    }
+
+    &:nth-of-type(3) {
+      height: 100vh;
+    }
   }
 
   /* Stack elements vertically for smaller screens */
@@ -200,15 +209,6 @@ section {
 
   .name {
      font-size: 2rem; /* Slightly reduce name size */
-  }
-
-  /* Adjust icon container layout */
-  .icons, .icons1 {
-     display: grid;
-     grid-template-columns: repeat(2, 1fr);  /* 2 icons per row */
-     gap: 20px;
-     justify-items: center;
-     width: 100%;
   }
 
   /* Further tweaks to icon sizes */
