@@ -170,6 +170,10 @@ section {
      padding: 10px;
   }
 
+  section {
+    height: 80vh;
+  }
+
   /* Stack elements vertically for smaller screens */
   .splitSection {
      display: flex;
