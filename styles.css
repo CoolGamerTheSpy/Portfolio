@@ -68,6 +68,10 @@ body {
   color: #e0dd24;
 }
 
+.Red {
+  color: #e64141;
+}
+
 .icons {
   display: flex;
   text-align: center;
