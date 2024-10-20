@@ -29,23 +29,29 @@
     <section>
         <div class="splitSection">
             <div class="greetingText">
-            <p>Hi, I'm </p><p class="name">Adrian Vargas.</p>
-            <h1>Game Developer and Programmer</h1>
-            <p>I make games, love to Program, and am always exited for new challenges!</p>
+                <p>Hi, I'm </p><p class="name">Adrian Vargas.</p>
+                <h1>Game Developer and Programmer</h1>
+                <p>I make games, love to program, and am always exited for new challenges!</p>
             </div>
             <div class="greetingImg">
-            <img class="photoMe" src="./img/me.webp" alt="Picture of me">
+                <img class="photoMe" src="./img/me.webp" alt="Picture of me">
             </div>
         </div>
     </section>
     
+    <!-- More about me / Bio -->
     <section>
-        <h1 class="reveal-type">A little bit more about me...</h1>
+        <h2 class="reveal-type">A little bit more about me...</h2>
         <div class="splitSection">
-        <p class="reveal-type">I am video game developer and have particitaped in helping some of games in the span of 5 years.I am also an intermediate Full-Stack Web Developer, learning how to make websites more intreactive and fun, like this one!</p>
+            <p class="reveal-text">I am a first-year college student at the University of Washington, currently in pre-science, trying to major in computer science.
+                I have participated in the making of some video games and started my own in 4 years.
+                I also try my best in web development learning to make websites more interactive and fun, like this one!
+                I love repairing, fixing, and creating electronic devices and other technology as a hobby.
+                </p>
         </div>
     </section>
 
+    <!-- Programs I know / am learning -->
     <section>
         <h2 class="reveal-type">Programming languages I use</h2> 
         <div class="icons1">
@@ -66,7 +72,7 @@
         </div>
         <h2 class="reveal-type">Programming languages I am learning</h2>
         <div class="reveal-type">
-            <div class="icons">
+            <div class="icons2">
                 <img class="ASM" src="./icons/Asm.png" alt="asm">
                 <div class="Red"><i class="devicon-java-plain"></i></div>
                 <div class="Blue"><i class="devicon-godot-plain"></i></div>
@@ -74,8 +80,9 @@
         </div>
     </section>
 
+    <!-- Projects I am working on / made -->
     <section>
-        <h1></h1>
+        <h2 class="reveal-type">Projects I am a part of.</h2>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
@@ -106,6 +113,63 @@
                 stagger: 0.05
             })
         })
+
+        gsap.from(".reveal-text", {
+            scrollTrigger: {
+                trigger: '.reveal-text',
+                start: 'top 80%',
+                end: 'top 20%',
+                scrub: false,
+                markers: false,
+                toggleActions: 'play none none reverse'
+            },
+            y:100,
+            opacity: 0,
+            stagger: 0.05
+        })
+
+        gsap.from(".icons", {
+            scrollTrigger: {
+                trigger: '.icons',
+                start: 'top 90%',
+                end: 'top 10%',
+                scrub: false,
+                markers: false,
+                toggleActions: 'play none none reverse'
+            },
+            y:100,
+            opacity: 0,
+            stagger: 0.05
+        })
+
+        gsap.from(".icons1", {
+            scrollTrigger: {
+                trigger: '.icons1',
+                start: 'top 90%',
+                end: 'top 10%',
+                scrub: false,
+                markers: false,
+                toggleActions: 'play none none reverse'
+            },
+            y:100,
+            opacity: 0,
+            stagger: 0.05
+        })
+
+        gsap.from(".icons2", {
+            scrollTrigger: {
+                trigger: '.icons2',
+                start: 'top 90%',
+                end: 'top 10%',
+                scrub: false,
+                markers: false,
+                toggleActions: 'play none none reverse'
+            },
+            y:100,
+            opacity: 0,
+            stagger: 0.05
+        })
+
         // Initialize Lenis
         const lenis = new Lenis();
         
